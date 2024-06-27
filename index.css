@@ -1,18 +1,4 @@
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-.container {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 20px;
-    /*
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    横の線を追加する場合はこれを用いる
-    */
-}
 #top{
     text-align: center;
     font-size: 50px;
@@ -89,4 +75,39 @@ body {
 .gametitles{
     width: fit-content;
     margin: auto;
+}
+
+
+/*以下Gamesにカーソルを合わせると表示されるメニューの作成*/
+.gnav__games__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gnav__dropdown__menu {
+    border: 3px solid lightgray; 
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;   
+    list-style: none;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+    min-width: 160px; 
+}
+.gnav__dropdown__menu li {
+    border-bottom: 1px solid #ccc;
+}
+.gnav__dropdown__menu li:last-child {
+    border-bottom: none;
+}
+.gnav__dropdown__menu li a {
+    color: black; 
+}
+.gnav__dropdown__menu li a:hover {
+    background-color: lightgray;
+}
+.gnav__games__dropdown:hover .gnav__dropdown__menu {
+    display: block;
 }
