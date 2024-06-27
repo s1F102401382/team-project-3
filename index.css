@@ -1,0 +1,52 @@
+#top{
+    text-align: center;
+    font-size: 30px;
+}
+.site-header{
+    background: #FFF;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+    display: flex;
+    padding: 0;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+.site-header.fixed{
+    position: fixed;
+    top: 0;
+}
+.gnav__menu{
+    display: flex;
+    margin: 10px 0px 0px 40px;
+    padding: 14px 4px 15px 15px;
+    background-color: gray;
+    font-weight:700;
+}
+.gnav__menu__item{
+    list-style: none;
+    border-right:solid #dedede;
+}
+.gnav__menu__item a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    max-height: 500px;
+    overflow: hidden;
+    text-align:center;
+}
+
+.resizeheader{
+    width: auto;
+    height: auto;  
+}
+
+.gamelist{
+    padding-left: 0;
+    list-style: none;
+    display: flex;    
+}
+.gametitles{
+    width: fit-content;
+    margin: auto;
+}
